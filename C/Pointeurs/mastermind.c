@@ -1,14 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main()
 {
     int nb_tour = 0;
-    char codesecret[4] = {'R', 'V', 'J', 'B'};
+    char couleurs[5] = {'R', 'V', 'J', 'B', 'O'};
+    char codesecret[4];
     char choix_joueur[4];
 
-    // printf("%s\n", choix_joueur);
-    //  couleurs mal placées
+    srand(time(NULL));
+    for (int i = 0; i < 4; i++)
+    {
+        int couleur_id = rand() % 5;
+        codesecret[i] = couleurs[couleur_id];
+        printf("code_secret[%d] = %c\n", i, codesecret[i]);
+    }
+
     while (nb_tour < 5)
     {
         int nb_couleurs_ok = 0;
