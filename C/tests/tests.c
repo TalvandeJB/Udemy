@@ -9,6 +9,7 @@
 MU_TEST(test_palindrome)
 {
     mu_check(is_palindrome("kayak") == 1);
+    // mu_check(is_palindrome("Kayak") == 1);
     mu_check(is_palindrome("Bonjour") == 0);
 }
 
