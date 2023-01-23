@@ -9,7 +9,7 @@ int main()
     {
         return -1;
     }
-    printf("Quel est votre âge ?\n");
+    printf("Quel est votre age ?\n");
     scanf("%d", pt_age);
     printf("Votre age est de %d ans", *pt_age);
     free(pt_age);
