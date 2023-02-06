@@ -1,7 +1,7 @@
 #include "minunit.h"
-#include "../Strings/palindrome.c"
-#include "../Tableaux/tri.h"
-#include "../Tableaux/morpion.h"
+#include "../Strings/Palindrome/palindrome.c"
+#include "../Tableaux/Tri_tableau/tri.c"
+#include "../Tableaux/Morpion/morpion.c"
 
 // void test_tri(void)
 // {
